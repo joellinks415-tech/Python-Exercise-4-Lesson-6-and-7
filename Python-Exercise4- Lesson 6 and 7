@@ -1,0 +1,85 @@
+# Question 1: Using a for loop with a list
+
+# TODO: Create a list of fruits
+fruits = ["Apple", "Banana", "Cherry","Orange"]
+
+# TODO: Use a for loop to print each fruit in the list
+for fruit in fruits:
+    print(fruit)
+
+
+#-------------------------------------------------------------------------
+# Question 2: Using a while loop for countdown
+
+# TODO: Use a while loop to create a countdown from 5 to 1
+count = 5 
+while count >= 1:
+    print(count)
+    count -= 1 # Decrements the counter so the loop will eventually stops
+
+
+#-------------------------------------------------------------------------
+# Question 3: Using a for loop with range()
+
+# TODO: Use a for loop to print the first 10 square numbers
+for i in range(1, 11):
+    square = i ** 2
+    print(square)
+
+
+#-------------------------------------------------------------------------
+
+# Question 4: Using the random module
+
+# TODO: Import the random module
+import random 
+
+# TODO: Create a list of colors
+colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink",]
+
+# TODO: Use a for loop to select and print 3 random colors from the list
+for i in range(3):
+    random_color = random.choice(colors)
+    print(f"Rnadom color {i+1}: {random_color}")
+
+
+#-------------------------------------------------------------------------
+# Question 5: Creating and using a custom module
+
+# TODO: Create a new file named 'math_operations.py' with the following content:
+"""
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Error: Division by zero"
+"""
+
+# TODO: Import the custom module and use its functions
+import math_operations 
+
+
+# TODO: Use a while loop to create a simple calculator 
+result_add = math_operations.add(5, 3)
+result_mult = math_operations.multiply(4, 2)
+
+print("Addition Result:" , result_add)
+print("Multiplication Result:", result_mult)def add(a, b):
+    return a + b 
+
+
+def subtract(a, b):
+    return a-b
+
+
+def multiply(a, b):
+    return a * b 
